@@ -195,104 +195,53 @@ Pilih produk yang ingin Anda promosikan. Setiap paket berisi foto HD, caption si
 </a>
 </div>
 
-<section class="listing-box">
+<div class="resource-card">
 
-<h2>📋 Copy & Paste Listing Siap Pakai</h2>
+<h3>📦 Rak Gantung Segitiga</h3>
 
-<div class="copy-card">
+<p>
+Semua materi promosi siap digunakan.
+</p>
 
-<div class="copy-header">
+<div class="copy-actions">
 
-<h3>Rak Gantung Segitiga Premium</h3>
+<button onclick="copyTitle1()">
+📋 Copy Judul
+</button>
 
-<button onclick="copyListing()">
-📋 Copy Listing
+<button onclick="copyDesc1()">
+📝 Copy Deskripsi
+</button>
+
+<button onclick="copyLink1()">
+🛒 Copy Link Shopee
 </button>
 
 </div>
 
-<textarea id="listingText" readonly>
-JUDUL PRODUK
-
-Rak Gantung Dinding Besi Minimalis Custom Segitiga Kotak Rumah Rak Dekorasi Industrial Premium Handmade Bogorian Furniture
-
-LINK SHOPEE
-
-https://shopee.co.id/Rak-Gantung-Dinding-Besi-Minimalis-Custom-Segitiga-Kotak-Rumah-Rak-Dekorasi-Industrial-Premium-Handmade-Bogorian-Furniture-i.1750001282.55906749130
-
-DESKRIPSI PRODUK
-
-Buat tampilan ruangan lebih estetik dengan rak gantung premium handmade dari Bogorian Furniture.
-
-✅ Handmade Berkualitas
-✅ Besi Kokoh
-✅ Finishing Premium
-✅ Cocok Untuk Dekorasi Rumah
-✅ Cocok Untuk Shopee Affiliate
-
-HASHTAG
-
-#rakdinding
-#rakgantung
-#dekorasirumah
-#shopeeaffiliate
-#bogorianfurniture
-</textarea>
-
 </div>
-
-<div class="copy-link-box">
-
-<h3>🛒 Link Produk Shopee</h3>
-
-<div class="link-row">
-
-<input
-type="text"
-id="shopeeLink1"
-value="https://shopee.co.id/Rak-Gantung-Dinding-Besi-Minimalis-Custom-Segitiga-Kotak-Rumah-Rak-Dekorasi-Industrial-Premium-Handmade-Bogorian-Furniture-i.1750001282.55906749130"
-readonly>
-
-<button onclick="copyShopeeLink()">
-🛒 Copy Link
-</button>
-
-<a
-href="https://shopee.co.id/Rak-Gantung-Dinding-Besi-Minimalis-Custom-Segitiga-Kotak-Rumah-Rak-Dekorasi-Industrial-Premium-Handmade-Bogorian-Furniture-i.1750001282.55906749130"
-target="_blank"
-class="open-shopee">
-👀 Buka Shopee </a>
-
-</div>
-
-</div>
-
-</section>
 
 <script>
 
-function copyListing(){
-
-const copyText =
-document.getElementById("listingText");
-
+function copyTitle1(){
 navigator.clipboard.writeText(
-copyText.value
+"Rak Gantung Dinding Besi Minimalis Custom Segitiga Kotak Rumah Rak Dekorasi Industrial Premium Handmade Bogorian Furniture"
 );
-
-alert("Listing berhasil disalin!");
+alert("Judul berhasil disalin");
 }
 
-function copyShopeeLink(){
-
-const copyText =
-document.getElementById("shopeeLink1");
-
+function copyDesc1(){
 navigator.clipboard.writeText(
-copyText.value
+"Buat tampilan ruangan lebih estetik dengan rak gantung premium handmade dari Bogorian Furniture..."
 );
+alert("Deskripsi berhasil disalin");
+}
 
-alert("Link Shopee berhasil disalin!");
+function copyLink1(){
+navigator.clipboard.writeText(
+"https://shopee.co.id/Rak-Gantung-Dinding-Besi-Minimalis-Custom-Segitiga-Kotak-Rumah-Rak-Dekorasi-Industrial-Premium-Handmade-Bogorian-Furniture-i.1750001282.55906749130"
+);
+alert("Link Shopee berhasil disalin");
 }
 
 </script>
