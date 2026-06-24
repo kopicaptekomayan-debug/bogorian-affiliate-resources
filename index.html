@@ -181,6 +181,8 @@ Pilih produk yang ingin Anda promosikan. Setiap paket berisi foto HD, caption si
 </a>
 </div>
 
+  
+
 <div class="card">
 <h3>📦 Rak Gantung Besi Loop</h3>
 <p>
@@ -193,6 +195,109 @@ Pilih produk yang ingin Anda promosikan. Setiap paket berisi foto HD, caption si
 </a>
 </div>
 
+<section class="listing-box">
+
+<h2>📋 Copy & Paste Listing Siap Pakai</h2>
+
+<div class="copy-card">
+
+<div class="copy-header">
+
+<h3>Rak Gantung Segitiga Premium</h3>
+
+<button onclick="copyListing()">
+📋 Copy Listing
+</button>
+
+</div>
+
+<textarea id="listingText" readonly>
+JUDUL PRODUK
+
+Rak Gantung Dinding Besi Minimalis Custom Segitiga Kotak Rumah Rak Dekorasi Industrial Premium Handmade Bogorian Furniture
+
+LINK SHOPEE
+
+https://shopee.co.id/Rak-Gantung-Dinding-Besi-Minimalis-Custom-Segitiga-Kotak-Rumah-Rak-Dekorasi-Industrial-Premium-Handmade-Bogorian-Furniture-i.1750001282.55906749130
+
+DESKRIPSI PRODUK
+
+Buat tampilan ruangan lebih estetik dengan rak gantung premium handmade dari Bogorian Furniture.
+
+✅ Handmade Berkualitas
+✅ Besi Kokoh
+✅ Finishing Premium
+✅ Cocok Untuk Dekorasi Rumah
+✅ Cocok Untuk Shopee Affiliate
+
+HASHTAG
+
+#rakdinding
+#rakgantung
+#dekorasirumah
+#shopeeaffiliate
+#bogorianfurniture
+</textarea>
+
+</div>
+
+<div class="copy-link-box">
+
+<h3>🛒 Link Produk Shopee</h3>
+
+<div class="link-row">
+
+<input
+type="text"
+id="shopeeLink1"
+value="https://shopee.co.id/Rak-Gantung-Dinding-Besi-Minimalis-Custom-Segitiga-Kotak-Rumah-Rak-Dekorasi-Industrial-Premium-Handmade-Bogorian-Furniture-i.1750001282.55906749130"
+readonly>
+
+<button onclick="copyShopeeLink()">
+🛒 Copy Link
+</button>
+
+<a
+href="https://shopee.co.id/Rak-Gantung-Dinding-Besi-Minimalis-Custom-Segitiga-Kotak-Rumah-Rak-Dekorasi-Industrial-Premium-Handmade-Bogorian-Furniture-i.1750001282.55906749130"
+target="_blank"
+class="open-shopee">
+👀 Buka Shopee </a>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function copyListing(){
+
+const copyText =
+document.getElementById("listingText");
+
+navigator.clipboard.writeText(
+copyText.value
+);
+
+alert("Listing berhasil disalin!");
+}
+
+function copyShopeeLink(){
+
+const copyText =
+document.getElementById("shopeeLink1");
+
+navigator.clipboard.writeText(
+copyText.value
+);
+
+alert("Link Shopee berhasil disalin!");
+}
+
+</script>
+
+  
 <div class="card">
 <h3>📦 Rak Gantung House</h3>
 <p>
